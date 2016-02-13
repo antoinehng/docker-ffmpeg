@@ -5,7 +5,7 @@ MAINTAINER Antoine Henning <henning.antoine@gmail.com>
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
     add-apt-repository -y ppa:mc3man/trusty-media && \
-    apt-get update
+    apt-get update && apt-get upgrade
 
 # Install ffmpeg
 RUN apt-get install -y ffmpeg
