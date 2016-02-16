@@ -14,4 +14,4 @@ RUN apt-get install -y ffmpeg
 RUN apt-get autoclean -y && apt-get autoremove -y && apt-get clean -y && \
     rm -rf /var/lib/apt/lists/*
 
-CMD ["bash"]
+CMD ["ffmpeg"]
